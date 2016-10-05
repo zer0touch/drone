@@ -2,7 +2,7 @@
 drone
 =====
 [![Build Status](https://drone.service.consul/api/badge/gogs.service.consul/docker/drone/status.svg?branch=master)](https://drone.service.consul/gogs.service.consul/docker/drone)
-Creates the docker drone build do run drone CI... for those of you unfamiliar with drone, well its pretty good. Everything runs in a container, much like travis ci.  Really good for things like packer builds.
+Creates the docker drone build to run drone CI... for those of you unfamiliar with drone, well its pretty good. Everything runs in a container, much like travis ci.  Really good for things like packer builds.
 
 Default ports are 3000 and 22
 ## Example
