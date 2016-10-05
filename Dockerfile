@@ -14,7 +14,7 @@ RUN unzip -d /usr/local/bin/ /consul.zip && \
     dpkg -i /tmp/drone.deb
     rm -f /tmp/*.deb && \
     rm -f /tmp/*.zip && \
-    chmod 750 /run.sh && \
+    chmod 750 /run.sh
 
 ADD ./drone.toml /etc/drone/drone.toml
 VOLUME /consul-data
