@@ -1,0 +1,75 @@
+[server]
+port=":8082"
+
+#####################################################################
+# SSL configuration
+#
+# [server.ssl]
+# key=""
+# cert=""
+
+# [session]
+# secret=""
+# expires=""
+
+#####################################################################
+# Database configuration, by default using SQLite3.
+# You can also use postgres and mysql. See the documentation
+# for more details.
+
+[database]
+driver="sqlite3"
+datasource="/var/lib/drone/drone.sqlite"
+
+# [github]
+# client=""
+# secret=""
+# orgs=[]
+# open=false
+
+# [github_enterprise]
+# client=""
+# secret=""
+# api=""
+# url=""
+# orgs=[]
+# private_mode=false
+# open=false
+
+# [bitbucket]
+# client=""
+# secret=""
+# open=false
+
+# [gitlab]
+# url=""
+# client=""
+# secret=""
+# skip_verify=false
+# open=false
+
+[gogs]
+url="http://gogs.service.consul"
+open=true
+
+#####################################################################
+# SMTP configuration for Drone. This is required if you plan
+# to send email notifications for build statuses.
+#
+# [smtp]
+# host=""
+# port=""
+# from=""
+# user=""
+# pass=""
+
+# [docker]
+# cert=""
+# key=""
+
+[worker]
+ nodes=[
+   "tcp://docker1.node.consul:2375",
+   "tcp://docker2.node.consul:2375",
+   "tcp://docker3.node.consul:2375"
+]
