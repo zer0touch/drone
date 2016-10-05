@@ -5,8 +5,7 @@ RUN apt-get -qq update && \
 
 # Add all your Files
 ADD http://downloads.drone.io/master/drone.deb /tmp/drone.deb
-ADD https://dl.bintray.com/mitchellh/consul/0.4.1_linux_amd64.zip /consul.zip
-ADD https://dl.bintray.com/mitchellh/consul/0.4.1_web_ui.zip /consul-ui.zip
+ADD https://releases.hashicorp.com/consul/0.7.0/consul_0.7.0_linux_amd64.zip /consul.zip
 ADD ./services/drone.json /etc/consul.d/drone.json
 ADD ./run.sh /run.sh
 
