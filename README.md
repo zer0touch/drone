@@ -8,6 +8,6 @@ Default ports are 3000 and 22
 ## To change the default encryption key for consul you will need to rebuild the image with a new key. This is randomly created so please make sure to change it
 Run with standard configuration
 
-    docker run -p 8082:8082 --privileged zer0touch/drone
+    ``docker run -p 8082:8082 --privileged zer0touch/drone``
 
 This container makes use of service discovery and the name of the container represents its standard identifier when requesting or looking up services. 
