@@ -11,7 +11,7 @@ ADD ./run.sh /run.sh
 
 # RUN the install
 RUN unzip -d /usr/local/bin/ /consul.zip && \
-    dpkg -i /tmp/drone.deb
+    dpkg -i /tmp/drone.deb && \
     rm -f /tmp/*.deb && \
     rm -f /tmp/*.zip && \
     chmod 750 /run.sh
