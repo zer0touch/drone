@@ -9,7 +9,7 @@ ADD https://releases.hashicorp.com/consul/0.7.0/consul_0.7.0_linux_amd64.zip /co
 ADD ./services/drone.json /etc/consul.d/drone.json
 ADD ./run.sh /run.sh
 
-RUn the install
+# RUN the install
 RUN unzip -d /usr/local/bin/ /consul.zip && \
     dpkg -i /tmp/drone.deb
     rm -f /tmp/*.deb && \
